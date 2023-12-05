@@ -1,0 +1,16 @@
+﻿<Window x:Class="RoslynCompiler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Roslyn Compiler" Height="200" Width="400">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+            <TextBlock Text="IP Address:"/>
+            <TextBox x:Name="IpAddressTextBox" Width="200" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Port:"/>
+            <TextBox x:Name="PortTextBox" Width="200" Margin="0,0,0,20"/>
+
+            <Button x:Name="GenerateButton" Content="Generate Client" Width="200" Click="GenerateButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
